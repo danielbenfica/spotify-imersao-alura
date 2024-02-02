@@ -1,0 +1,146 @@
+body{
+  font-family: var(--font-dm-sans);
+  color: var(--text-base-color);
+}
+.page__header{
+  background-color: #000;
+  padding: 32px 51px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.page__header .logo img{
+  width: 116px;
+}
+
+.page__main{
+  height: 100vh;
+  background: linear-gradient(to bottom, var(--base-background), #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.page__main .login__container{
+  background-color: var(--base-background);
+  width: 600px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.login__container .login__container-header h1{
+  color: var(--text-base-color);
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.login__container form{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #292929;
+}
+
+.login__container form label{
+  color: var(--text-base-color);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 18px 0 8px 0;
+}
+
+.login__container form .inputs{
+  width: 323px;
+  height: 30px;
+  border: 1.5px solid var(--text-input-color);
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--text-base-color);
+}
+
+.login__container form .checkbox__container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login__container form .checkbox__container label{
+  display: flex;
+}
+
+
+.login__container form .checkbox__container .checkbox__input-fake{
+  background-color: #727272;
+  width: 35px;
+  height: 15px;
+  border-radius: 50px;
+  position: relative;
+  rotate: 180deg;
+  margin-right: 10px;
+}
+
+.login__container form .checkbox__container #rememberMe{
+  display: none;
+}
+
+.login__container form .checkbox__container .checkbox__input-circle{
+  width: 14px;
+  height: 14px;
+  background-color: var(--base-background);
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+}
+
+.login__container form .checkbox__container #rememberMe:checked ~ .checkbox__input-fake .checkbox__input-circle{
+  left: 2px;
+}
+.login__container form .checkbox__container #rememberMe:checked ~ .checkbox__input-fake{
+  background-color: var(--bg-base-spotify);
+}
+
+
+.login__container form .login-button{
+  background-color: #1ed760;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+}
+
+.login__container form .login-button span{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.login__container form .forgot-password{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.login__container form .forgot-password a{
+  color: var(--text-base-color);
+}
+
+.login__container .create-account{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.login__container .create-account span{
+  color: #b3b3b3;
+}
+
+.login__container .create-account a{
+  color: var(--text-base-color);
+}

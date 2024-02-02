@@ -1,0 +1,16 @@
+:root{
+  /* FONT */
+  --font-dm-sans: "DM Sans", sans-serif;
+  
+  /* COLORS */
+  --base-background: #121212;
+  --bg-icons: #131313;
+  --bg-arrow-color: rgba(0,0,0,7);
+  --bg-search: #242424;
+  --text-button-subscribe: #a7a7a7;
+  --text-input-color: #b3b3b3;
+  --text-base-color: #fff;
+  --text-button-login: #000;
+  --bg-body: #000;
+  --bg-base-spotify: #1db954;
+}
